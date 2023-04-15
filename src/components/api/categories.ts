@@ -94,7 +94,7 @@ render(){
         this.shadowRoot?.appendChild(css);
 
         this.shadowRoot.innerHTML += `
-            <section class = "card">
+            <section class = "Card">
             <h1>${this.animal}</h1>
             <h1>${this.career}</h1>
             <h1>${this.celebrity}</h1>
