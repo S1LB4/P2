@@ -17,22 +17,22 @@ class Dashboard extends HTMLElement {
     render(){
         appState.people.forEach((data:any) => {
             const ChuckCard = this.ownerDocument.createElement("my-card") as Card;
-            ChuckCard.setAttribute(Attribute.animal, data.name);
-            ChuckCard.setAttribute(Attribute.career, data.height);
-            ChuckCard.setAttribute(Attribute.celebrity, data.mass);
-            ChuckCard.setAttribute(Attribute.animal, data.dev);
-            ChuckCard.setAttribute(Attribute.career, data.explicit);
-            ChuckCard.setAttribute(Attribute.celebrity, data.fashion);
-            ChuckCard.setAttribute(Attribute.animal, data.food);
-            ChuckCard.setAttribute(Attribute.career, data.history);
-            ChuckCard.setAttribute(Attribute.celebrity, data.money);
-            ChuckCard.setAttribute(Attribute.animal, data.movie);
-            ChuckCard.setAttribute(Attribute.career, data.music);
-            ChuckCard.setAttribute(Attribute.celebrity, data.political);
-            ChuckCard.setAttribute(Attribute.animal, data.religion);
-            ChuckCard.setAttribute(Attribute.career, data.science);
-            ChuckCard.setAttribute(Attribute.celebrity, data.sport);
-            ChuckCard.setAttribute(Attribute.celebrity, data.travel);
+            ChuckCard.setAttribute(Attribute.animal, data.animal);
+            ChuckCard.setAttribute(Attribute.career, data.career);
+            ChuckCard.setAttribute(Attribute.celebrity, data.celebrity);
+            ChuckCard.setAttribute(Attribute.dev, data.dev);
+            ChuckCard.setAttribute(Attribute.explicit, data.explicit);
+            ChuckCard.setAttribute(Attribute.fashion, data.fashion);
+            ChuckCard.setAttribute(Attribute.food, data.food);
+            ChuckCard.setAttribute(Attribute.history, data.history);
+            ChuckCard.setAttribute(Attribute.money, data.money);
+            ChuckCard.setAttribute(Attribute.movie, data.movie);
+            ChuckCard.setAttribute(Attribute.music, data.music);
+            ChuckCard.setAttribute(Attribute.political, data.political);
+            ChuckCard.setAttribute(Attribute.religion, data.religion);
+            ChuckCard.setAttribute(Attribute.science, data.science);
+            ChuckCard.setAttribute(Attribute.sport, data.sport);
+            ChuckCard.setAttribute(Attribute.travel, data.travel);
            
 
             this.shadowRoot?.appendChild(ChuckCard)
